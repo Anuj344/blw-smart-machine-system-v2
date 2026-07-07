@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Machine Details | BLW Smart QR System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-dark bg-primary shadow">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold">
+
+                🚆 BLW Smart QR Machine Information System
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Main -->
+
+    <div class="container py-5">
+
+        <div class="card shadow-lg border-0">
+
+            <div class="card-header bg-primary text-white">
+
+                <h2 class="mb-0">
+
+                    <i class="bi bi-gear-fill"></i>
+
+                    Machine Details
+
+                </h2>
+
+            </div>
+
+            <div class="card-body">
+
+                <!-- Image -->
+
+                <div class="text-center mb-4">
+
+                    <img
+
+                        id="machineImage"
+
+                        class="img-fluid rounded shadow"
+
+                        style="max-width:400px;max-height:300px;object-fit:cover;">
+
+                </div>
+
+                <!-- Name -->
+
+                <h2
+
+                    id="machineName"
+
+                    class="text-center text-primary fw-bold mb-4">
+
+                </h2>
+
+                <!-- Table -->
+
+                <table class="table table-bordered table-striped">
+
+                    <tbody>
+
+                        <tr>
+
+                            <th width="30%">
+
+                                Machine Code
+
+                            </th>
+
+                            <td id="machineCode"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Department
+
+                            </th>
+
+                            <td id="department"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Manufacturer
+
+                            </th>
+
+                            <td id="manufacturer"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Year
+
+                            </th>
+
+                            <td id="year"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Operator
+
+                            </th>
+
+                            <td id="operator"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Status
+
+                            </th>
+
+                            <td id="status"></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <th>
+
+                                Location
+
+                            </th>
+
+                            <td id="location"></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+                <hr>
+
+                <!-- Introduction -->
+
+                <h4 class="text-primary">
+
+                    Introduction
+
+                </h4>
+
+                <p id="introduction"></p>
+
+                <hr>
+
+                <!-- Working -->
+
+                <h4 class="text-primary">
+
+                    Working Principle
+
+                </h4>
+
+                <p id="working"></p>
+
+                <hr>
+
+                <!-- Applications -->
+
+                <h4 class="text-primary">
+
+                    Applications
+
+                </h4>
+
+                <ul id="applications" class="list-group mb-4"></ul>
+
+                <!-- Safety -->
+
+                <h4 class="text-primary">
+
+                    Safety Precautions
+
+                </h4>
+
+                <ul id="safety" class="list-group mb-4"></ul>
+
+                <!-- Maintenance -->
+
+                <h4 class="text-primary">
+
+                    Maintenance
+
+                </h4>
+
+                <ul id="maintenance" class="list-group mb-4"></ul>
+
+                <!-- Parts -->
+
+                <h4 class="text-primary">
+
+                    Main Parts
+
+                </h4>
+
+                <ul id="parts" class="list-group mb-4"></ul>
+
+                <!-- Buttons -->
+
+                <div class="d-grid gap-2">
+
+                    <button
+
+                        class="btn btn-primary"
+
+                        onclick="printMachine()">
+
+                        <i class="bi bi-printer-fill"></i>
+
+                        Print Details
+
+                    </button>
+
+                    <button
+
+                        class="btn btn-danger"
+
+                        onclick="downloadPDF()">
+
+                        <i class="bi bi-file-earmark-pdf-fill"></i>
+
+                        Download PDF
+
+                    </button>
+
+                    <button
+
+                        class="btn btn-success"
+
+                        onclick="shareMachine()">
+
+                        <i class="bi bi-share-fill"></i>
+
+                        Share Machine
+
+                    </button>
+
+                    <button
+
+                        class="btn btn-secondary"
+
+                        onclick="goBack()">
+
+                        <i class="bi bi-arrow-left-circle-fill"></i>
+
+                        Back
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="text-center py-4 text-muted">
+
+        © 2026 BLW Smart QR Machine Information System
+
+    </footer>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Machine JS -->
+
+    <script src="machine.js"></script>
+
+</body>
+
+</html>

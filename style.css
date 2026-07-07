@@ -1,0 +1,1000 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:linear-gradient(90deg,#0d6efd,#0a58ca)!important;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:white!important;
+    font-weight:500;
+    margin-left:15px;
+}
+
+.nav-link:hover{
+    color:#ffe082!important;
+}
+
+/* 
+   HERO SECTION
+ */
+
+.hero{
+
+    background:linear-gradient(
+        135deg,
+        #0d6efd,
+        #00bcd4
+    );
+
+    padding:90px 20px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-top:15px;
+
+}
+
+.hero input{
+
+    margin-top:30px;
+
+    border-radius:40px;
+
+    padding:15px 25px;
+
+    border:none;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.stat-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    margin-bottom:25px;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.stat-card h2{
+
+    font-size:40px;
+
+    color:#0d6efd;
+
+    font-weight:bold;
+
+}
+
+.stat-card p{
+
+    color:#666;
+
+    margin-top:10px;
+
+}
+
+/* ==========================================
+   BOOTSTRAP CARDS
+========================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+}
+
+.card-header{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.card img{
+
+    object-fit:cover;
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}
+
+.card h4{
+
+    color:#0d6efd;
+
+    font-weight:bold;
+
+}
+
+/* 
+   DASHBOARD ICONS
+ */
+
+.bi{
+
+    transition:.3s;
+
+}
+
+.card:hover .bi{
+
+    transform:scale(1.15);
+
+}
+
+/* BUTTONS */
+
+.btn{
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-primary{
+
+    background:#0d6efd;
+
+}
+
+.btn-success{
+
+    background:#198754;
+
+}
+
+.btn-danger{
+
+    background:#dc3545;
+
+}
+
+.btn-warning{
+
+    color:white;
+
+}
+
+/* ==========================================
+   SEARCH BOX
+========================================== */
+
+input[type=text],
+input[type=password],
+input[type=file],
+textarea,
+select{
+
+    border-radius:12px!important;
+
+    padding:12px;
+
+    border:1px solid #ced4da;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:#0d6efd!important;
+
+    box-shadow:0 0 10px rgba(13,110,253,.25)!important;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    animation:fadeIn .5s ease;
+
+}
+
+/* ANIMATION*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ADMIN CONTAINER */
+
+.admin-container{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    margin-bottom:40px;
+
+}
+
+.admin-container h1,
+.admin-container h2{
+
+    color:#0d6efd;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+form label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+form input,
+form textarea,
+form select{
+
+    margin-bottom:18px;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+/* ===========================
+   MACHINE CARDS
+=========================== */
+
+#machineList .card{
+
+    transition:.35s;
+
+}
+
+#machineList .card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+}
+
+#machineList img{
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+/* ===========================
+   MACHINE IMAGE
+=========================== */
+
+#previewImage,
+#machineImage{
+
+    border-radius:15px;
+
+    border:5px solid white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+table th{
+
+    background:#0d6efd;
+
+    color:white;
+
+    width:30%;
+
+}
+
+table td{
+
+    background:white;
+
+}
+
+/* ===========================
+   LIST GROUP
+=========================== */
+
+.list-group{
+
+    border-radius:12px;
+
+}
+
+.list-group li{
+
+    padding:12px 15px;
+
+}
+
+/* ===========================
+   QR SECTION
+=========================== */
+
+#qrSection{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+#qrImage{
+
+    border:8px solid white;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+   CHARTS
+=========================== */
+
+canvas{
+
+    max-height:350px;
+
+}
+
+/* ===========================
+   TOAST
+=========================== */
+
+.toast{
+
+    border-radius:12px;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+.login-container{
+
+    width:420px;
+
+    margin:80px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.login-container h1{
+
+    color:#0d6efd;
+
+    margin-bottom:30px;
+
+    font-weight:bold;
+
+}
+
+.login-container button{
+
+    width:100%;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
+
+    font-weight:500;
+
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+
+    font-size:14px;
+
+    padding:8px 12px;
+
+}
+
+/* ===========================
+   HR
+=========================== */
+
+hr{
+
+    margin:25px 0;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.stat-card{
+
+margin-bottom:20px;
+
+}
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+.hero{
+
+padding:60px 20px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.login-container{
+
+width:95%;
+
+margin:40px auto;
+
+padding:25px;
+
+}
+
+.admin-container{
+
+padding:20px;
+
+}
+
+table th{
+
+width:40%;
+
+}
+
+#machineImage,
+#previewImage{
+
+max-width:100%;
+
+height:auto;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:10px;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.hero h1{
+
+font-size:26px;
+
+}
+
+.hero input{
+
+width:100%;
+
+}
+
+.card-body{
+
+padding:18px;
+
+}
+
+footer{
+
+font-size:14px;
+
+}
+
+}
+
+/* ===========================
+   LOADING SPINNER
+=========================== */
+
+.spinner-border{
+
+width:4rem;
+
+height:4rem;
+
+}
+
+/* ===========================
+   CARD ANIMATION
+=========================== */
+
+.card{
+
+animation:cardFade .5s ease;
+
+}
+
+@keyframes cardFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   IMAGE ANIMATION
+=========================== */
+
+img{
+
+transition:.3s;
+
+}
+
+img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* ===========================
+   BUTTON EFFECT
+=========================== */
+
+.btn{
+
+transition:all .3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   CUSTOM SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#f1f1f1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#0d6efd;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#084298;
+
+}
+
+/* ===========================
+   PRINT
+=========================== */
+
+@media print{
+
+nav,
+
+footer,
+
+.btn,
+
+.toast,
+
+#searchInput,
+
+#searchMachine,
+
+#departmentFilter{
+
+display:none !important;
+
+}
+
+body{
+
+background:white;
+
+}
+
+.card{
+
+box-shadow:none;
+
+border:none;
+
+}
+
+}
+
+/* ===========================
+   DARK MODE READY
+=========================== */
+
+.dark-mode{
+
+background:#121212;
+
+color:white;
+
+}
+
+.dark-mode .card{
+
+background:#1f1f1f;
+
+color:white;
+
+}
+
+.dark-mode table td{
+
+background:#1f1f1f;
+
+color:white;
+
+}
+
+.dark-mode table th{
+
+background:#0d6efd;
+
+}
+
+.dark-mode .admin-container{
+
+background:#1f1f1f;
+
+color:white;
+
+}
+
+.dark-mode input,
+
+.dark-mode textarea,
+
+.dark-mode select{
+
+background:#2b2b2b;
+
+color:white;
+
+border:1px solid #444;
+
+}
+
+/* ===========================
+   UTILITIES
+=========================== */
+
+.shadow-soft{
+
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.rounded-xl{
+
+border-radius:20px;
+
+}
+
+.text-primary-bold{
+
+color:#0d6efd;
+
+font-weight:bold;
+
+}
+
+.cursor-pointer{
+
+cursor:pointer;
+
+}
+
+.fade-up{
+
+animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   MACHINE DETAILS LIST
+=========================== */
+
+#applications li,
+#safety li,
+#maintenance li,
+#parts li{
+
+padding:10px 15px;
+
+border-bottom:1px solid #e9ecef;
+
+list-style:disc inside;
+
+background:#fff;
+
+}
+
+#applications li:last-child,
+#safety li:last-child,
+#maintenance li:last-child,
+#parts li:last-child{
+
+border-bottom:none;
+
+}
+

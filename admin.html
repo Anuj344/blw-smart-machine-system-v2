@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BLW Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold">
+🚆 BLW Admin
+</a>
+
+<div class="ms-auto">
+
+<a href="index.html" class="btn btn-light me-2">
+Home
+</a>
+
+<button class="btn btn-danger" onclick="logout()">
+Logout
+</button>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Dashboard -->
+
+<div class="container mt-4">
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="bi bi-gear-fill fs-1 text-primary"></i>
+
+<h2 id="totalMachines">0</h2>
+
+<p>Total Machines</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="bi bi-building fs-1 text-success"></i>
+
+<h2 id="totalDepartments">0</h2>
+
+<p>Departments</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="bi bi-qr-code fs-1 text-danger"></i>
+
+<h2 id="totalQR">0</h2>
+
+<p>QR Generated</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow border-0">
+
+<div class="card-body text-center">
+
+<i class="bi bi-person-fill fs-1 text-warning"></i>
+
+<h2 id="totalOperators">0</h2>
+
+<p>Operators</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Charts -->
+
+<div class="container mt-5">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="card shadow">
+
+<div class="card-header bg-primary text-white">
+
+Machines by Department
+
+</div>
+
+<div class="card-body">
+
+<canvas id="departmentChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow">
+
+<div class="card-header bg-success text-white">
+
+Machine Status
+
+</div>
+
+<div class="card-body">
+
+<canvas id="statusChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Export Button -->
+
+<div class="container mt-4">
+
+<button
+class="btn btn-success"
+onclick="downloadExcel()">
+
+📊 Export Excel
+
+</button>
+
+</div>
+
+<!-- Form -->
+
+<div class="container mt-4">
+
+<div class="admin-container">
+
+<h2>Machine Management</h2>
+
+<form id="machineForm">
+
+<input class="form-control mb-3" id="machineName" placeholder="Machine Name" required>
+
+<input class="form-control mb-3" id="machineCode" placeholder="Machine Code" required>
+
+<input class="form-control mb-3" id="department" placeholder="Department" required>
+
+<input class="form-control mb-3" id="location" placeholder="Location" required>
+
+<select id="status" class="form-control mb-3">
+
+<option value="Working">🟢 Working</option>
+
+<option value="Maintenance">🟡 Maintenance</option>
+
+<option value="Breakdown">🔴 Breakdown</option>
+
+</select>
+
+<input class="form-control mb-3" id="operator" placeholder="Operator Name">
+
+<input class="form-control mb-3" id="manufacturer" placeholder="Manufacturer">
+
+<input
+type="text"
+id="year"
+placeholder="Year (Optional)">
+
+<input class="form-control mb-3" type="file" id="image">
+
+<textarea class="form-control mb-3" id="introduction" placeholder="Introduction"></textarea>
+
+<textarea class="form-control mb-3" id="working" placeholder="Working Principle"></textarea>
+
+<input class="form-control mb-3" id="applications" placeholder="Applications">
+
+<input class="form-control mb-3" id="safety" placeholder="Safety">
+
+<input class="form-control mb-3" id="maintenance" placeholder="Maintenance">
+
+<input class="form-control mb-3" id="parts" placeholder="Main Parts">
+
+<button class="btn btn-primary w-100">
+
+Save Machine
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- QR -->
+
+<div class="container mt-5">
+
+<h2>Generated QR Code</h2>
+
+<div id="qrSection" style="display:none">
+
+<img id="qrImage" width="250">
+
+<br><br>
+
+<a id="downloadQR" download="MachineQR.png">
+
+<button class="btn btn-success">
+
+Download QR
+
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Search -->
+
+<div class="container mt-5">
+
+<div class="row mb-3">
+
+<div class="col-md-6">
+
+<input
+type="text"
+id="searchMachine"
+class="form-control"
+placeholder="Search Machine">
+
+</div>
+
+<div class="col-md-6">
+
+<select
+id="departmentFilter"
+class="form-select">
+
+<option value="">All Departments</option>
+
+</select>
+
+</div>
+
+</div>
+
+<h2>Saved Machines</h2>
+
+<div class="row" id="machineList">
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+
+<!-- Toast Notification -->
+
+<div class="toast-container position-fixed top-0 end-0 p-3">
+
+<div
+id="liveToast"
+class="toast align-items-center text-bg-success border-0"
+role="alert"
+data-bs-delay="3000">
+
+<div class="d-flex">
+
+<div class="toast-body" id="toastMessage">
+
+Success
+
+</div>
+
+<button
+type="button"
+class="btn-close btn-close-white me-2 m-auto"
+data-bs-dismiss="toast">
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="toast-container position-fixed top-0 end-0 p-3">
+
+    <div
+        id="liveToast"
+        class="toast align-items-center text-bg-success border-0"
+        role="alert"
+        data-bs-delay="3000">
+
+        <div class="d-flex">
+
+            <div class="toast-body" id="toastMessage">
+                Success
+            </div>
+
+            <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast">
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
