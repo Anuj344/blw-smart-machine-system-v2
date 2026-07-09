@@ -1,4 +1,4 @@
-const API_URL = "http://192.168.1.22:5000/api/machines";
+const API_URL = "https://blw-smart-machine-system.onrender.com/api/machines";
 
 const params = new URLSearchParams(window.location.search);
 
