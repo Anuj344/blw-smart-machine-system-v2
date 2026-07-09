@@ -1,9 +1,10 @@
 const QRCode = require("qrcode");
-const Machine = require("../models/Machine");
+const Machine = require("../models/machine");
 const PDFDocument = require("pdfkit");
 const ExcelJS = require("exceljs");
 const fs = require("fs");
 const path = require("path");
+const PORT = process.env.PORT || 5000;
 // =========================
 // ADD MACHINE
 // =========================
@@ -13,18 +14,17 @@ const addMachine = async (req, res) => {
     try {
 
         // Base URL
-        const baseURL =
-            process.env.BASE_URL ||
-            "http://192.168.1.22:5000";
+        const frontendURL =
+`${req.protocol}://${req.hostname}:5500`;
 
+const backendURL =
+`${req.protocol}://${req.hostname}:${PORT}`;
         // Image Upload
         if (req.file) {
+req.body.image =
+`${backendURL}/uploads/${req.file.filename}`;
 
-            req.body.image =
-                `${baseURL}/uploads/${req.file.filename}`;
-
-        }
-
+}
         // Convert comma separated values into arrays
 
         if (req.body.applications) {
@@ -70,7 +70,7 @@ const addMachine = async (req, res) => {
         // Generate QR
 
         const qrURL =
-            `${baseURL}/machine.html?id=${machine._id}`;
+    `${frontendURL}/machine.html?id=${machine._id}`;
 
         const qrImage = await QRCode.toDataURL(
 
@@ -128,11 +128,22 @@ const getMachines = async (req, res) => {
 
     try {
 
-        const machines = await Machine.find().sort({
+       const machines = await Machine.find().sort({
+    createdAt: -1
+});
 
-            createdAt: -1
+const backendURL = `${req.protocol}://${req.get("host")}`;
 
-        });
+machines.forEach(machine => {
+
+    if (machine.image) {
+
+        const filename = machine.image.split("/").pop();
+
+        machine.image = `${backendURL}/uploads/${filename}`;
+    }
+
+});
 
         res.status(200).json({
 
@@ -218,18 +229,17 @@ const updateMachine = async (req, res) => {
 
     try {
 
-        const baseURL =
-            process.env.BASE_URL ||
-            "http://192.168.1.22:5000";
-
+        const frontendURL = process.env.BASE_URL;
+const backendURL = `http://${req.hostname}:${process.env.PORT || 5000}`;
         // Update Image
 
-        if (req.file) {
+    if (req.file) {
 
-            req.body.image =
-                `${baseURL}/uploads/${req.file.filename}`;
+    req.body.image =
+        `${backendURL}/uploads/${req.file.filename}`;
 
-        }
+} 
+    
 
         // Convert Arrays
 

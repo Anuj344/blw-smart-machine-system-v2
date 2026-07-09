@@ -6,6 +6,7 @@ const path = require("path");
 dotenv.config();
 
 const connectDB = require("./config/db");
+console.log("MONGO_URI =", process.env.MONGO_URI);
 
 const machineRoutes = require("./routes/machineRoutes");
 const authRoutes = require("./routes/authRoutes");
@@ -36,5 +37,5 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, "0.0.0.0", () => {
-    console.log(`✅ Server Running on http://192.168.1.22:${PORT}`);
+    console.log(`✅ Server Running on http://10.249.218.161:${PORT}`);
 });

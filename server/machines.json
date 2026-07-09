@@ -1,0 +1,636 @@
+[{
+  "_id": {
+    "$oid": "6a43d1a397b59a657def4151"
+  },
+  "machine_name": "Hydraulic Trainer Machine",
+  "machine_code": "24",
+  "department": "NA",
+  "manufacturer": "NA",
+  "year": 2024,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "introduction": "The Hydraulic Trainer Machine is an educational and practical training system used to study hydraulic power transmission. It enables trainees to understand hydraulic circuits, pumps, cylinders, valves, actuators, and pressure control systems. The machine simulates industrial hydraulic operations under safe laboratory conditions and provides hands-on experience in designing, assembling, operating, and troubleshooting hydraulic circuits.",
+  "working_principle": "The Hydraulic Trainer Machine works on Pascal's Law, which states that pressure applied to an enclosed incompressible fluid is transmitted equally in all directions.\r\nWhen the electric motor drives the hydraulic pump, hydraulic oil is drawn from the reservoir and delivered under pressure through valves to the actuator (hydraulic cylinder). The pressurized oil moves the piston, converting hydraulic energy into mechanical motion. Control valves regulate pressure, flow rate, and direction of movement. After completing the operation, the oil returns to the reservoir through the return line, completing the hydraulic circuit.",
+  "applications": [
+    "Used to train apprentices and technical staff in hydraulic systems.",
+    "Demonstrates the working of hydraulic pumps and valves and cylinders.",
+    "Helps in understanding hydraulic circuits used in locomotive maintenance.",
+    "Provides hands-on practice for troubleshooting and fault diagnosis.",
+    "Improves the practical skills of maintenance engineers and technicians.",
+    "Supports technical education and skill development in the BLW Training Centre."
+  ],
+  "safety": [
+    "Wear safety shoes and safety goggles.",
+    "Never exceed the rated pressure.",
+    "Check for oil leakage before operation.",
+    "Keep hands away from moving cylinders.",
+    "Do not disconnect hoses while the system is pressurized.",
+    "Maintain proper oil level.",
+    "Stop the machine immediately if abnormal noise occurs.",
+    "Keep the work area clean and dry. Only trained personnel should operate the machine.",
+    "Switch OFF power before maintenance."
+  ],
+  "maintenance": [
+    "Check the hydraulic oil level and refill if necessary.",
+    "Inspect all hoses and pipes and fittings for oil leakage or damage.",
+    "Clean the hydraulic filters and remove any dirt or contaminants.",
+    "Tighten all nuts and bolts and hydraulic connections.",
+    "Check the pressure gauge and control valves for proper operation.",
+    "Inspect the hydraulic cylinder and seals for wear or leakage.",
+    "Clean the machine and surrounding work area and record maintenance in the logbook."
+  ],
+  "parts": [
+    "Hydraulic Oil Tank (Reservoir)",
+    "Electric Motor",
+    "Hydraulic Pump",
+    "Pressure Relief Valve",
+    "Direction Control Valve",
+    "Flow Control Valve",
+    "Pressure Gauge",
+    "Hydraulic Cylinders",
+    "Hydraulic Hoses",
+    "Quick Release Couplings",
+    "Control Panel",
+    "Hydraulic Filters",
+    "Oil Level Indicator",
+    "Return Line",
+    "Frame/Workbench"
+  ],
+  "image": "http://localhost:5000/uploads/1782829475119.png",
+  "createdAt": {
+    "$date": "2026-06-30T14:24:35.171Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:15:25.690Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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",
+  "status": "Working"
+},
+{
+  "_id": {
+    "$oid": "6a49e5daaa22e60a1846ba72"
+  },
+  "machine_name": "Slotting Machine",
+  "machine_code": "1325",
+  "department": "NA",
+  "manufacturer": "NA",
+  "year": null,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Slotting Machine is a reciprocating machine tool used for machining internal and external slots, keyways, grooves, splines, and flat surfaces. It operates with a vertically moving cutting tool that removes material from the workpiece one stroke at a time. It is widely used in workshops for precision machining operations.",
+  "working_principle": "The Slotting Machine works on the principle of reciprocating motion. An electric motor drives the ram through a crank and slotted-link mechanism. The cutting tool mounted on the ram moves vertically. Material is removed during the downward cutting stroke, while the upward stroke is the return stroke. After each stroke, the workpiece is fed automatically or manually until the required shape or size is obtained.",
+  "applications": [
+    "Used for machining keyways in locomotive components.",
+    "Produces internal slots and grooves in machine parts.",
+    "Used in maintenance and repair of mechanical components.",
+    "Provides practical training to apprentices on slotting operations.",
+    "Helps in manufacturing and finishing precision locomotive parts.",
+    "Supports workshop machining and maintenance activities."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Clamp the workpiece securely before machining.",
+    "Keep hands away from the moving ram.",
+    "Do not measure the workpiece while the machine is running.",
+    "Use the correct cutting tool and speed.",
+    "Stop the machine before changing the tool or workpiece.",
+    "Keep the machine clean and free from metal chips."
+  ],
+  "maintenance": [
+    "Lubricate all moving parts and guideways.",
+    "Check and tighten nuts and bolts and machine fasteners.",
+    "Clean the machine and remove metal chips after use.",
+    "Inspect the ram and tool holder and feed mechanism for wear.",
+    "Check the electrical motor and belt drive for proper operation.",
+    "Verify the lubrication system and oil levels.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Base",
+    "Column",
+    "Ram",
+    "Tool Head",
+    "Tool Post",
+    "Saddle",
+    "Cross Slide",
+    "Rotary Table",
+    "Feed Mechanism",
+    "Electric Motor"
+  ],
+  "image": "http://localhost:5000/uploads/1783227866811.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T05:04:26.894Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:18:06.649Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a49f22d90d8e86b96c64d78"
+  },
+  "machine_name": "CNC Lathe Machine",
+  "machine_code": "3205",
+  "department": "NA",
+  "manufacturer": "M/s HMT",
+  "year": 2005,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The CNC Lathe Machine is a computer-controlled machine tool used for precision machining of cylindrical components. It rotates the workpiece while a cutting tool removes material according to a programmed sequence. CNC lathes provide high accuracy, repeatability, and productivity, making them ideal for manufacturing complex locomotive parts.",
+  "working_principle": "The CNC Lathe Machine works by rotating the workpiece while the cutting tool moves along programmed X and Z axes. The CNC controller interprets G-code and M-code commands to control spindle speed, feed rate, tool movement, and machining sequence. Material is removed with high precision to produce the desired shape and dimensions.",
+  "applications": [
+    "Used for machining locomotive shafts and bushes and axles.",
+    "Manufactures precision cylindrical components for locomotives.",
+    "Produces threaded and tapered machine parts.",
+    "Supports maintenance and repair of locomotive components.",
+    "Provides practical CNC programming and machining training to apprentices.",
+    "Improves production accuracy and efficiency in BLW workshops."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Ensure the workpiece is securely clamped.",
+    "Keep machine doors closed during operation.",
+    "Do not touch rotating parts or cutting tools.",
+    "Press the emergency stop button in case of abnormal operation.",
+    "Remove chips using a brush not by hand.",
+    "Stop the machine before changing tools or measuring the workpiece."
+  ],
+  "maintenance": [
+    "Check lubrication oil and coolant levels.",
+    "Clean chips from the machine bed and chip conveyor.",
+    "Inspect the chuck and turret and cutting tools for wear.",
+    "Check hydraulic and pneumatic systems for leaks.",
+    "Inspect electrical cables and emergency stop function.",
+    "Clean machine guideways and apply lubrication.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Machine Bed",
+    "Headstock",
+    "Spindle",
+    "Chuck",
+    "Tailstock Turret (Tool Magazine)",
+    "Cutting Tools",
+    "CNC Control Panel",
+    "Servo Motors",
+    "Ball Screws Coolant System",
+    "Hydraulic Unit",
+    "Chip Conveyor",
+    "Emergency Stop Button"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783231020954.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T05:57:01.154Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:09:01.919Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a49f7f190d8e86b96c64d79"
+  },
+  "machine_name": "Pillar Drill Machine",
+  "machine_code": "458",
+  "department": "NA",
+  "manufacturer": "M/s Praga Tool Co. Ltd. India",
+  "year": null,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Pillar Drill Machine is a stationary drilling machine used to produce accurate holes in metal, wood, and other materials. It consists of a rotating drill bit mounted on a spindle supported by a vertical pillar. The machine provides precise drilling with better stability and is widely used in manufacturing, maintenance, and training workshops.",
+  "working_principle": "The Pillar Drill Machine works by rotating the drill bit through an electric motor. The workpiece is fixed on the table, and the rotating drill is fed downward using the feed handle. The cutting edges of the drill bit remove material to produce holes of the required diameter and depth. Different spindle speeds are selected depending on the material and drill size.",
+  "applications": [
+    "Used for drilling holes in locomotive components.",
+    "Performs reaming and tapping operations during maintenance.",
+    "Supports fabrication and assembly of mechanical parts.",
+    "Provides practical training to apprentices in drilling operations.",
+    "Used in repair and maintenance of workshop equipment.",
+    "Ensures accurate hole making for manufacturing and maintenance activities."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Clamp the workpiece securely before drilling.",
+    "Remove the chuck key before starting the machine.",
+    "Do not wear loose clothing or jewelry.",
+    "Keep hands away from the rotating drill bit.",
+    "Stop the machine before changing the drill bit or measuring the workpiece.",
+    "Clean metal chips with a brush not by hand."
+  ],
+  "maintenance": [
+    "Lubricate the spindle and other moving parts.",
+    "Check the condition of the drill chuck and drill bits.",
+    "Inspect belts and pulleys for wear or looseness.",
+    "Tighten all nuts bolts and machine fastener.",
+    "Clean the machine and remove metal chips after use.",
+    "Check electrical connections and motor operation.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Base",
+    "Pillar (Column)",
+    "Work Table",
+    "Drill Head",
+    "Spindle",
+    "Chuck",
+    "Electric Motor",
+    "Feed Handle",
+    "Belt and Pulley Drive",
+    "Depth Stop",
+    "Machine Vice"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783232497180.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T06:21:37.263Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:19:14.219Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a49fb5c90d8e86b96c64d7a"
+  },
+  "machine_name": "Tool Grinder Machine",
+  "machine_code": "3492",
+  "department": "NA",
+  "manufacturer": "M/s HMT",
+  "year": 2008,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Tool Grinder Machine is used to sharpen, shape, and recondition cutting tools such as lathe tools, drill bits, milling cutters, and other machining tools. It uses a rotating abrasive grinding wheel to remove a small amount of material from the tool, restoring its cutting edge and improving machining accuracy.",
+  "working_principle": "The Tool Grinder Machine works by rotating an abrasive grinding wheel at high speed using an electric motor. The cutting tool is brought into contact with the rotating wheel, which removes a small amount of material through abrasion. This process restores the tool's sharp cutting edge and correct geometry for efficient machining.",
+  "applications": [
+    "Sharpens cutting tools used in locomotive manufacturing.",
+    "Restores worn lathe tools and drill bits and milling cutters.",
+    "Supports tool maintenance in machine shops.",
+    "Provides practical training in tool grinding for apprentices.",
+    "Improves machining accuracy and tool life.",
+    "Reduces tooling costs by reconditioning used cutting tools."
+  ],
+  "safety": [
+    "Wear safety goggles and gloves and a face shield.",
+    "Check the grinding wheel for cracks before starting.",
+    "Keep the tool rest properly adjusted.",
+    "Do not apply excessive pressure while grinding.",
+    "Stand to one side when starting the grinder.",
+    "Never touch the rotating grinding wheel.",
+    "Switch OFF the machine before making adjustments or replacing the wheel."
+  ],
+  "maintenance": [
+    "Clean the grinding wheel and machine after use.",
+    "Inspect the grinding wheel for cracks or excessive wear.",
+    "Check and tighten all nuts and bolts and wheel guards.",
+    "Lubricate bearings and moving parts if required.",
+    "Inspect the electrical motor and switch and power cable.",
+    "Adjust the tool rest and eye shield for safe operation.",
+    "Record all maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Base",
+    "Electric Motor",
+    "Grinding Wheel",
+    "Wheel Guard",
+    "Tool Rest",
+    "Work Table",
+    "Spindle",
+    "Coolant System (if provided)",
+    "On/Off Switch",
+    "Eye Shield"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783233372116.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T06:36:12.217Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:24:57.425Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a49fd3c90d8e86b96c64d7b"
+  },
+  "machine_name": "Radial Drill Machine",
+  "machine_code": "829",
+  "department": "NA",
+  "manufacturer": "M/s Hindustan",
+  "year": null,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Radial Drill Machine is a heavy-duty drilling machine used for drilling, reaming, tapping, and boring large and heavy workpieces. Its radial arm can rotate and move vertically, allowing holes to be drilled at different positions without moving the workpiece. It is widely used in manufacturing and maintenance workshops.",
+  "working_principle": "The Radial Drill Machine works by rotating the drill bit through an electric motor while the spindle feeds the tool into the stationary workpiece. The radial arm can rotate around the column and move vertically, enabling drilling at different locations without repositioning the workpiece. This design makes it suitable for machining large and heavy components accurately.",
+  "applications": [
+    "Used for drilling large locomotive components.",
+    "Performs drilling and reaming and tapping operations during manufacturing.",
+    "Supports maintenance and repair of heavy mechanical parts.",
+    "Provides practical training to apprentices in drilling operations.",
+    "Machines heavy workpieces without moving them frequently.",
+    "Improves productivity and accuracy in BLW machine shops."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Clamp the workpiece securely before drilling.",
+    "Remove the chuck key before starting the machine.",
+    "Keep hands away from the rotating drill bit.",
+    "Do not wear loose clothing or jewelry.",
+    "Stop the machine before changing the drill bit or measuring the workpiece.",
+    "Clean metal chips using a brush only."
+  ],
+  "maintenance": [
+    "Lubricate the spindle and radial arm and guideways.",
+    "Check and tighten all nuts and bolts and locking mechanisms.",
+    "Inspect the drill chuck and spindle for wear or damage.",
+    "Clean the machine and remove metal chips after use.",
+    "Check electrical connections and motor performance.",
+    "Inspect belts and gears and feed mechanism for proper operation.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Base",
+    "Column",
+    "Radial Arm",
+    "Drill Head",
+    "Spindle",
+    "Chuck",
+    "Electric Motor",
+    "Feed Mechanism",
+    "Work Table",
+    "Control Panel"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783233852419.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T06:44:12.484Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:29:06.492Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a49ff0090d8e86b96c64d7c"
+  },
+  "machine_name": "Centre Lathe Machine",
+  "machine_code": "3608",
+  "department": "NA",
+  "manufacturer": "M/s HMT",
+  "year": 2010,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Centre Lathe Machine is one of the most commonly used machine tools for machining cylindrical components. It rotates the workpiece while a cutting tool removes material to produce accurate shapes and dimensions. It is widely used for manufacturing, repair, and maintenance of locomotive components in workshops.",
+  "working_principle": "The Centre Lathe Machine works by rotating the workpiece using the spindle while a cutting tool moves linearly along the workpiece. Material is removed in the form of chips to produce the required shape, size, and surface finish. The feed mechanism controls the movement of the cutting tool for accurate machining.",
+  "applications": [
+    "Used for machining locomotive shafts and axles and bushes. Performs turning and threading and facing of mechanical components.",
+    "Supports maintenance and repair of locomotive parts.",
+    "Provides practical training to apprentices in lathe operations.",
+    "Manufactures precision cylindrical components used in BLW.",
+    "Improves machining accuracy and productivity in workshop operations."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Ensure the workpiece is securely clamped.",
+    "Keep hands away from rotating parts.",
+    "Remove the chuck key before starting the machine.",
+    "Do not wear loose clothing or jewelry.",
+    "Stop the machine before measuring or changing the tool.",
+    "Remove metal chips with a brush not by hand."
+  ],
+  "maintenance": [
+    "Lubricate the bed and lead screw and other moving parts.",
+    "Check the chuck and tool post and tailstock for proper alignment.",
+    "Inspect belts and gears and feed mechanisms for wear.",
+    "Clean the machine and remove metal chips after use.",
+    "Check electrical connections and motor operation.",
+    "Inspect coolant and lubrication levels.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Bed. Headstock",
+    "Spindle",
+    "Chuck",
+    "Tailstock",
+    "Carriage",
+    "Cross Slide",
+    "Compound Rest",
+    "Tool Post",
+    "Lead Screw",
+    "Feed Rod",
+    "Electric Motor"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783234304745.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T06:51:44.792Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:43:24.196Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a4a012d90d8e86b96c64d7d"
+  },
+  "machine_name": "Universal Milling Machine",
+  "machine_code": "416",
+  "department": "NA",
+  "manufacturer": "M/s Hindustan",
+  "year": null,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Universal Milling Machine is a versatile machine tool used for machining flat surfaces, slots, grooves, gears, and complex shapes. It can perform both horizontal and vertical milling operations with the help of suitable attachments. Its adjustable worktable allows machining at different angles, making it suitable for precision manufacturing and maintenance work.",
+  "working_principle": "The Universal Milling Machine works by rotating a milling cutter at high speed while the workpiece is fed against it. The rotating cutter removes material in the form of small chips to produce the desired shape. The worktable can move in longitudinal, cross, and vertical directions and can also swivel to machine angular and helical surfaces.",
+  "applications": [
+    "Used for machining locomotive components such as slots and keyways and flat surfaces.",
+    "Produces precision machine parts for manufacturing and maintenance.",
+    "Supports repair and fabrication of mechanical components.",
+    "Provides practical milling training to apprentices and technicians.",
+    "Used for gear cutting and machining complex profiles.",
+    "Improves productivity and machining accuracy in BLW workshops."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Clamp the workpiece securely before machining.",
+    "Keep hands away from the rotating cutter.",
+    "Do not wear loose clothing or jewelry.",
+    "Remove chips using a brush not by hand.",
+    "Stop the machine before changing cutters or measuring the workpiece.",
+    "Use the correct cutter and cutting speed for the material."
+  ],
+  "maintenance": [
+    "Lubricate the spindle and guideways and feed screws.",
+    "Check and tighten all nuts and bolts and machine fasteners.",
+    "Inspect milling cutters and arbor for wear or damage.",
+    "Clean the machine and worktable and remove metal chips.",
+    "Check electrical connections and motor operation.",
+    "Inspect coolant and lubrication systems for proper functioning.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Base",
+    "Column",
+    "Knee",
+    "Saddle",
+    "Swivel Work Table",
+    "Spindle",
+    "Arbor",
+    "Overarm",
+    "Milling Cutter",
+    "Feed Mechanism",
+    "Electric Motor",
+    "Control Levers"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783234861545.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T07:01:01.597Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:56:25.734Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a4a02fa90d8e86b96c64d7f"
+  },
+  "machine_name": "Vertical Milling Machine",
+  "machine_code": "3609",
+  "department": "NA",
+  "manufacturer": "M/s Sigma",
+  "year": null,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Vertical Milling Machine is a precision machine tool used for machining flat surfaces, slots, grooves, keyways, and complex profiles. It has a vertically mounted spindle that holds the cutting tool. The rotating cutter removes material from the stationary workpiece with high accuracy, making it suitable for manufacturing, maintenance, and training purposes.",
+  "working_principle": "The Vertical Milling Machine works by rotating a cutting tool mounted on a vertical spindle. The workpiece is clamped on the table, which moves in longitudinal, cross, and vertical directions. As the rotating cutter comes into contact with the workpiece, it removes material to produce the required shape, size, and surface finish.",
+  "applications": [
+    "Used for machining flat surfaces and slots in locomotive components.",
+    "Produces precision parts for manufacturing and maintenance.",
+    "Performs keyway and groove and pocket milling operations.",
+    "Provides practical training in milling operations to apprentices.",
+    "Supports repair and fabrication of locomotive components.",
+    "Improves machining accuracy and productivity in BLW workshops."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Clamp the workpiece securely before machining.",
+    "Keep hands away from the rotating cutter.",
+    "Do not wear loose clothing or jewelry.",
+    "Remove chips with a brush not by hand.",
+    "Stop the machine before changing cutters or measuring the workpiece.",
+    "Use the correct cutting speed and feed for the material."
+  ],
+  "maintenance": [
+    "Lubricate the spindle and guideways and feed screws.",
+    "Check and tighten all nuts and bolts and machine fasteners.",
+    "Inspect the milling cutter and spindle for wear or damage.",
+    "Clean the worktable and remove metal chips after use.",
+    "Check electrical connections and motor performance.",
+    "Inspect coolant and lubrication systems for proper operation.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Base",
+    "Column",
+    "Knee",
+    "Saddle",
+    "Work Table",
+    "Vertical Spindle",
+    "Milling Head",
+    "Quill",
+    "Milling Cutter",
+    "Feed Mechanism",
+    "Electric Motor",
+    "Control Panel"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783235322829.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T07:08:42.834Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:53:03.793Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+},
+{
+  "_id": {
+    "$oid": "6a4a049b90d8e86b96c64d80"
+  },
+  "machine_name": "Horizontal Milling Machine",
+  "machine_code": "2891",
+  "department": "NA",
+  "manufacturer": "NA",
+  "year": null,
+  "operator": "NA",
+  "location": "Fitting & Machine Section",
+  "status": "Working",
+  "introduction": "The Horizontal Milling Machine is a machine tool used for machining flat surfaces, slots, grooves, gears, and heavy workpieces. It has a horizontally mounted spindle that holds the milling cutter on an arbor. This machine is suitable for heavy-duty cutting operations and is widely used in manufacturing and maintenance workshops.",
+  "working_principle": "The Horizontal Milling Machine works by rotating a milling cutter mounted on a horizontal spindle. The workpiece is clamped on the worktable, which moves in longitudinal, cross, and vertical directions. As the rotating cutter comes into contact with the workpiece, it removes material in the form of chips to produce the required shape and dimensions.",
+  "applications": [
+    "Used for machining locomotive components with flat surfaces and slots.",
+    "Performs heavy-duty milling operations on large workpieces.",
+    "Produces gears and keyways and precision mechanical parts.",
+    "Supports manufacturing and maintenance of locomotive components.",
+    "Provides practical milling training to apprentices and technicians.",
+    "Improves machining accuracy and production efficiency in BLW workshops."
+  ],
+  "safety": [
+    "Wear safety goggles and safety shoes.",
+    "Secure the workpiece firmly before machining.",
+    "Keep hands away from the rotating cutter.",
+    "Do not wear loose clothing or jewelry.",
+    "Remove metal chips using a brush only.",
+    "Stop the machine before changing cutters or measuring the workpiece.",
+    "Use the correct cutting speed and feed for the material."
+  ],
+  "maintenance": [
+    "Lubricate the spindle and arbor and guideways and feed screws.",
+    "Check and tighten all nuts and bolts and arbor supports.",
+    "Inspect milling cutters and the arbor for wear or damage.",
+    "Clean the worktable and remove metal chips after use.",
+    "Check electrical connections and motor operation.",
+    "Inspect coolant and lubrication systems for proper functioning.",
+    "Record maintenance activities in the maintenance logbook."
+  ],
+  "parts": [
+    "Base",
+    "Column",
+    "Knee",
+    "Saddle",
+    "Work Table",
+    "Horizontal Spindle",
+    "Arbor",
+    "Overarm",
+    "Arbor Support",
+    "Milling Cutter",
+    "Feed Mechanism",
+    "Electric Motor"
+  ],
+  "image": "http://10.249.218.161:5000/uploads/1783235739414.jpeg",
+  "createdAt": {
+    "$date": "2026-07-05T07:15:39.473Z"
+  },
+  "updatedAt": {
+    "$date": "2026-07-07T10:49:03.720Z"
+  },
+  "__v": 0,
+  "qrCode": "data:image/png;base64,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"
+}]
