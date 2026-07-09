@@ -30,7 +30,7 @@ form.addEventListener("submit", async (e) => {
 
         const response = await fetch(
 
-            "https://blw-smart-machine-system.onrender.com/api/auth/login";,
+            "https://blw-smart-machine-system.onrender.com/api/auth/login",
 
             {
 
