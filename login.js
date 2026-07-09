@@ -1,3 +1,4 @@
+const API_URL = "https://blw-smart-machine-system.onrender.com/api/auth";
 const form = document.getElementById("loginForm");
 
 form.addEventListener("submit", async (e) => {
@@ -35,18 +36,12 @@ form.addEventListener("submit", async (e) => {
             {
 
                 method: "POST",
-
-                headers: {
-
-                    "Content-Type": "application/json"
-
-                },
-
-                body: JSON.stringify({
-
-                    username,
-
-                    password
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username,
+            password
 
                 })
 
