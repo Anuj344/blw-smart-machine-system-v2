@@ -4,7 +4,7 @@ async function loadMachines() {
 
     try {
 
-        const response = await fetch("http://192.168.1.22:5000/api/machines");
+        const response = await fetch("https://blw-smart-machine-system.onrender.com/api/machines");
 
         const machines = await response.json();
 
