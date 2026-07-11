@@ -5,6 +5,8 @@ const protect = (req, res, next) => {
     try {
 
         const authHeader = req.headers.authorization;
+        console.log("Received Header:", req.headers.authorization);
+        console.log("JWT Secret:", process.env.JWT_SECRET);
 
         if (!authHeader || !authHeader.startsWith("Bearer ")) {
 
