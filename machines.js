@@ -1,4 +1,8 @@
 const API_URL = "https://blw-smart-machine-system.onrender.com/api/machines";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14b2e9c (Update API URL)
 let allMachines = [];
 
 // LOAD MACHINES

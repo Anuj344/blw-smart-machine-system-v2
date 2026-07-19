@@ -998,3 +998,54 @@ border-bottom:none;
 
 }
 
+/* ========================= */
+/* AI CHATBOT */
+/* ========================= */
+
+#chatMessages{
+    background:#f5f7fb;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px;
+}
+
+.user-message{
+    text-align:right;
+    margin:10px 0;
+}
+
+.ai-message{
+    text-align:left;
+    margin:10px 0;
+}
+
+.user-message span{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    padding:10px 15px;
+    border-radius:18px 18px 5px 18px;
+    max-width:80%;
+}
+
+.ai-message span{
+    display:inline-block;
+    background:#198754;
+    color:white;
+    padding:10px 15px;
+    border-radius:18px 18px 18px 5px;
+    max-width:80%;
+}
+
+#chatInput{
+    border-radius:10px 0 0 10px;
+}
+
+#voiceBtn{
+    font-size:20px;
+}
+
+.typing{
+    font-style:italic;
+    color:#666;
+}

@@ -3,6 +3,7 @@ const API_URL = "https://blw-smart-machine-system.onrender.com/api/machines";
 const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id");
+let currentMachineCode = "";
 
 // LOAD MACHINE
 
@@ -34,6 +35,7 @@ async function loadMachine() {
 
         document.getElementById("machineCode").innerText =
             machine.machine_code;
+            currentMachineCode = machine.machine_code;
 
         document.getElementById("department").innerText =
             machine.department;
@@ -116,6 +118,119 @@ async function loadMachine() {
     }
 
 }
+
+// =============================
+// AI CHATBOT
+// =============================
+
+const chatMessages = document.getElementById("chatMessages");
+const chatInput = document.getElementById("chatInput");
+const sendBtn = document.getElementById("sendBtn");
+
+function addMessage(sender, text) {
+
+    const div = document.createElement("div");
+
+    div.className =
+        sender === "user"
+        ? "user-message"
+        : "ai-message";
+
+    div.innerHTML = `
+        <span>${text}</span>
+    `;
+
+    chatMessages.appendChild(div);
+
+    chatMessages.scrollTop =
+        chatMessages.scrollHeight;
+}
+
+async function sendMessage() {
+
+    const message = chatInput.value.trim();
+
+    if (!message) return;
+
+    addMessage("user", message);
+
+    chatInput.value = "";
+
+   const typing = document.createElement("div");
+
+typing.className = "typing";
+
+typing.id = "typing";
+
+typing.innerHTML = "🤖 AI is typing...";
+
+chatMessages.appendChild(typing);
+
+chatMessages.scrollTop =
+chatMessages.scrollHeight;
+
+    try {
+
+        const response = await fetch(
+            "https://blw-smart-machine-system.onrender.com/api/chat",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+
+                    machineCode: currentMachineCode,
+
+                    message: message
+
+                })
+
+            }
+        );
+
+        const data = await response.json();
+
+        document.getElementById("typing")?.remove();
+
+        if (data.success) {
+
+            addMessage("ai", data.reply);
+
+        } else {
+
+            addMessage("ai", data.message);
+
+        }
+
+    } catch (error) {
+
+        chatMessages.removeChild(chatMessages.lastChild);
+
+        addMessage(
+            "ai",
+            "Server Error. Please try again."
+        );
+
+        console.log(error);
+
+    }
+
+}
+
+sendBtn.addEventListener("click", sendMessage);
+
+chatInput.addEventListener("keypress", function (e) {
+
+    if (e.key === "Enter") {
+
+        sendMessage();
+
+    }
+
+});
 
 // STATUS BADGE
 
@@ -256,6 +371,51 @@ async function shareMachine() {
 function goBack() {
 
     window.history.back();
+
+}
+
+// =========================
+// VOICE SEARCH
+// =========================
+
+const voiceBtn =
+document.getElementById("voiceBtn");
+
+if ('webkitSpeechRecognition' in window) {
+
+    const recognition =
+    new webkitSpeechRecognition();
+
+    recognition.lang = "en-US";
+
+    recognition.continuous = false;
+
+    recognition.interimResults = false;
+
+    voiceBtn.addEventListener("click",()=>{
+
+        recognition.start();
+
+    });
+
+    recognition.onresult=(event)=>{
+
+        const text =
+        event.results[0][0].transcript;
+
+        chatInput.value = text;
+        sendMessage();
+    };
+
+    recognition.onerror=(e)=>{
+
+        console.log(e);
+
+    };
+
+}else{
+
+    voiceBtn.style.display="none";
 
 }
 

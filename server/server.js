@@ -1,4 +1,7 @@
+require('dotenv').config();
 const express = require("express");
+console.log(process.env.GEMINI_API_KEY);
+const chatRoutes = require("./routes/chatRoutes");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
@@ -19,6 +22,7 @@ connectDB();
 // Middlewares
 app.use(cors());
 app.use(express.json());
+app.use("/api", chatRoutes);
 app.use(express.urlencoded({ extended: true }));
 
 // Static Files
