@@ -4,14 +4,10 @@
 // ================================
 
 const API_URL = "https://blw-smart-machine-system.onrender.com/api/machines";
-<<<<<<< HEAD
-=======
 
->>>>>>> 14b2e9c (Update API URL)
 // ================================
 // GET MACHINE ID
-// ================================
-
+// ==========================
 const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id");
