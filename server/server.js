@@ -35,7 +35,7 @@ app.use("/api/machines", machineRoutes);
 
 // Test Route
 app.get("/", (req, res) => {
-    res.send("🚆 BLW Machine Information API Running...");
+    res.sendFile(path.join(__dirname, "../index.html"));
 });
 
 const PORT = process.env.PORT || 5000;
