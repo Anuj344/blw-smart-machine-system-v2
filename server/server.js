@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require("express");
-console.log(process.env.GEMINI_API_KEY);
 const chatRoutes = require("./routes/chatRoutes");
 const cors = require("cors");
 const dotenv = require("dotenv");
