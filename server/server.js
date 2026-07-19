@@ -37,7 +37,17 @@ app.use("/api/machines", machineRoutes);
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../index.html"));
 });
+app.get("/machine", (req, res) => {
+    res.sendFile(path.join(__dirname, "../machine.html"));
+});
 
+app.get("/admin", (req, res) => {
+    res.sendFile(path.join(__dirname, "../admin.html"));
+});
+
+app.get("/login", (req, res) => {
+    res.sendFile(path.join(__dirname, "../login.html"));
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, "0.0.0.0", () => {
